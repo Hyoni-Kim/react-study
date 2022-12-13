@@ -1,6 +1,15 @@
-#first commit
-#account setting test
-#Clone test
+
+
+12/13 Study
+============
+
+## function()={} 을 ()=> 로 변환 가능
+    onClick={() => console.log('click')}
+onClick prop으로 console.~ 함수를 전달
+
+## 하위 클래스의 생성자 정의할 때 super 호출
+    모든 react 컴포넌트 클래스는 생성자를 가질 때 super(props) 호출해야함
+
 
 # Getting Started with Create React App
 
