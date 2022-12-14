@@ -11,6 +11,26 @@ onClick prop으로 console.~ 함수를 전달
     모든 react 컴포넌트 클래스는 생성자를 가질 때 super(props) 호출해야함
 
 
+12/14 Study
+============
+
+## 부모 component에서 자식에 state 요청 X
+    부모 component에서 각 state를 저장하는 방법으로
+    부모가 자식에게 prop을 전달
+
+> 자식 컴포넌트들이 서로 통신하려면 부모 컴포넌트에서 공유 state를 정의해야함
+
+## 불변성
+
+> 직접적인 객채 변경이나, 기본 데이터 변경 X
+### 장점
+1. 복잡한 특징들을 단순하게 함 (특정 행동을 취소하고 되돌리기 등의 기능 구현)
+   * 이전 버전의 이력을 유지하고 재사용할 수 있게 함
+2. 변화 감지에 용이
+3. React에서 다시 렌더링 하는 시기를 결정
+   * react에서 순수 컴포넌트 만드는데 도움
+   * 변경 판단 후 컴포넌트가 다시 렌더링 할지를 결정 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
