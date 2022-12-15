@@ -1,3 +1,18 @@
+12/15 Study
+============
+
+## 함수 component
+    state없이 render함수만을 가짐
+    react.component 확장 클래스 대신 props를 입력받아서 렌더링할 대상을 반환
+
+12/14 Study
+============
+
+## 부모 component에서 자식에 state 요청 X
+    부모 component에서 각 state를 저장하는 방법으로
+    부모가 자식에게 prop을 전달
+
+> 자식 컴포넌트들이 서로 통신하려면 부모 컴포넌트에서 공유 state를 정의해야함
 
 
 12/13 Study
@@ -11,14 +26,7 @@ onClick prop으로 console.~ 함수를 전달
     모든 react 컴포넌트 클래스는 생성자를 가질 때 super(props) 호출해야함
 
 
-12/14 Study
-============
 
-## 부모 component에서 자식에 state 요청 X
-    부모 component에서 각 state를 저장하는 방법으로
-    부모가 자식에게 prop을 전달
-
-> 자식 컴포넌트들이 서로 통신하려면 부모 컴포넌트에서 공유 state를 정의해야함
 
 ## 불변성
 
