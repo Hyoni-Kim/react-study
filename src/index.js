@@ -94,6 +94,7 @@ function Square(props){
           squares: Array(9).fill(null),
         }],
         xIsNext: true,
+        stepNumber: 0,
       }
     }
 
@@ -113,11 +114,30 @@ function Square(props){
       });      
     }
 
+    jumpTo(step){
+      this.setState({
+        stepNumber: step,
+        xIsNext: (step%2) === 0,
+      });
+    }
+
     render() {
       
       const history = this.state.history;
       const current = history[history.length-1];
       const winner = calculateWinner(current.squares);
+
+      const moves = history.map((step, move)=>{
+        const desc = move?
+        'Go to move #'+ move:
+        'Go to game start';
+
+        return (
+          <li key={move}>
+            <button onClick={() => this.jumpTo(move)}>{desc}</button>
+          </li>
+        );
+      });
 
       let status;
 
@@ -139,7 +159,7 @@ function Square(props){
           </div>
           <div className="game-info">
             <div>{status}</div>
-            <ol>{/* TODO */}</ol>
+            <ol>{moves}</ol>
           </div>
         </div>
       );

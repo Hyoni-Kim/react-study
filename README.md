@@ -1,3 +1,16 @@
+12/19 Study
+============
+
+## map()
+    const numbers = [1, 2, 3];
+    const doubled = numbers.map(x => x * 2); // [2, 4, 6]
+
+> JS array가 가지고 있는 함수
+
+## key
+> 각 컴포넌트를 구별할 수 있게 하여 다시 렌더링 할 때 state를 유지
+> 컴포넌트는 key 조회 불가
+
 12/15 Study
 ============
 
