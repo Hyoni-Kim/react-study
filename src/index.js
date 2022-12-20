@@ -2,26 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 
-// class Square extends React.Component {
-
-//     constructor(props){
-//       super(props);
-//       this.state = {
-//         value: null,
-//       };
-//     }
-
-//     render() {
-//       return (
-//         <button
-//           className="square" 
-//           onClick={() => this.props.onClick()}
-//         >
-//           {this.props.value}
-//         </button>
-//       );
-//     }
-//   }
 
 //square를 function component로 작성
 function Square(props){
@@ -40,7 +20,6 @@ function Square(props){
               />
       );
     }
-  
     render() {
       return (
         <div>
@@ -60,6 +39,8 @@ function Square(props){
             {this.renderSquare(8)}
           </div>
         </div>
+
+
       );
     }
   }
@@ -95,11 +76,12 @@ function Square(props){
         }],
         xIsNext: true,
         stepNumber: 0,
+        size: 3,
       }
     }
 
     handleClick(i){
-      const history = this.state.history;
+      const history = this.state.history.slice(0,this.state.stepNumber+1);
       const current = history[history.length-1];
       const squares = current.squares.slice();
       if(calculateWinner(squares)||squares[i]){
@@ -110,6 +92,7 @@ function Square(props){
         history: history.concat([{
           squares:squares,
         }]),
+        stepNumber:history.length,
         xIsNext:!this.state.xIsNext,
       });      
     }
@@ -124,7 +107,7 @@ function Square(props){
     render() {
       
       const history = this.state.history;
-      const current = history[history.length-1];
+      const current = history[this.state.stepNumber];
       const winner = calculateWinner(current.squares);
 
       const moves = history.map((step, move)=>{
@@ -147,7 +130,6 @@ function Square(props){
       else{
         status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
       }
-      console.log(history);
 
       return (
         <div className="game">
