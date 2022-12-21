@@ -1,3 +1,24 @@
+12/21 Study
+============
+
+## JSX
+
+### What is JSX?
+> javascript xml
+> 마크업과 로직 분리x 
+> js 코드 안에서 UI 작업 할 때 시각적으로 도움
+
+    const name = 'Josh Perez';
+    const element = <h1>Hello, {name}</h1>;
+
+>중괄호 안은 유효한 js 표현식 모두 가능
+
+### 속성 정의
+> attribute 에 js 표현식 넣을 때 ""나 {} 중 하나만 쓰기
+> html attribute 이름 대신 camelcase 프로퍼티 사용
+
+
+
 12/19 Study
 ============
 
