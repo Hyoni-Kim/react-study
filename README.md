@@ -1,3 +1,43 @@
+12/23 Study
+============
+
+## Element
+
+### What is element?
+>react에서 가장 작은 단위. 화면에 표시할 내용
+>컴포넌트의 구성 요소
+
+
+### DOM에 엘리먼트 렌더링
+
+    <div id='root'></div>
+
+>root DOM 노드
+
+    const root = ReactDOM.createRoot(
+        document.getElementById('root');
+    );
+
+    const element = <h1>hello world!</h1>;
+    root.render(element);
+
+### 엘리먼트 업데이트
+
+    function tick(){
+        const element ={
+            <div>
+            <h1>hello world!</h1>
+            <h2>It is {new Date().toLocaleTimeString()}.</h2>
+            </div>
+        };
+        root.render(element);
+    }
+
+    setInterval(tick,1000);
+
+> setInteval 함수가 tick을 초에 한번 호출해야하지만, 실제로는 한번만 호출.
+> react DOM은 해당+자식 엘리먼트를 이전과 비교해 필요한 경우에만 DOM을 업데이트함
+
 12/21 Study
 ============
 
