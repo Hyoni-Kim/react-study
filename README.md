@@ -1,3 +1,30 @@
+12/24 Study
+============
+
+## Component
+
+### What is component?
+>javascript 함수와 유사
+
+
+### component 렌더링
+
+    function welcome(props){
+        return <h1>Hello, {props.name}</h1>;
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    const element = <Welcome name="Sara" />;
+    root.render(element);
+
+>사용자 정의 컴포넌트 가능
+>component 이름은 항상 대문자로 시작
+
+
+### props는 읽기 전용
+>컴포넌트 자체 props 수정 X
+
+
 12/23 Study
 ============
 
