@@ -1,3 +1,33 @@
+# File index
+
+### tic tac toe game ex
+    tictactoe.js
+    tictactoe.css
+> tictactoe 예제 js / css 파일
+
+1/3 Study
+============
+
+## lifecycle method
+> 컴포넌트 삭제될 때 해당 컴포넌트가 사용중이던 리소스를 확보해야함
+> lifecycle method를 선언해 컴포넌트 mount / unmount 시 특정 동작 가능
+
+    componentDidMound()
+
+>DOM 에 렌더링 되고 나면 실행
+
+1/2 Study
+============
+
+## 함수 vs 클래스
+> React 컴포넌트를 함수 혹은 클래스로 정의
+> React 컴포넌트 클래스는 React.Component를 상속받아야함
+> render()는 React.Component의 하위 class에서 반드시 작성해야함
+
+### React Lifecycle
+> component마다 여러 lifecycle method를 가짐. 특정 시점에 코드가 실행되도록 할 수 있음
+
+
 12/24 Study
 ============
 
