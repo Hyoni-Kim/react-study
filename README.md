@@ -5,6 +5,41 @@
     tictactoe.css
 > tictactoe 예제 js / css 파일
 
+1/4 Study
+============
+
+## State
+> 직접 수정 x
+
+    // 직접 수정 x
+    this.state.comment = 'hello';
+
+>setState() 사용하기
+
+    this.setState({comment:'hello'});
+
+>this.state는 constructor 에서 밖에 지정 불가
+
+### state는 비동기적일수 있음
+>setState() 호출을 단일 업데이트로 한꺼번에 처리할 수 있음
+
+    //업데이트 실패
+    this.setState({
+        counter: this.state.counter + this.props.increment
+    });
+
+>함수를 setState의 인자로 받아야함
+
+    this.setState((state, props) =>({
+        counter: state.counter + props.increment
+    }));
+
+### state 의 변수를 독립적으로 업데이트 가능
+
+### 데이터는 아래로 흐름
+>자신의 state를 자식 컴포넌트에 props로 전달할 수 있음
+
+
 1/3 Study
 ============
 
