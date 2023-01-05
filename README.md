@@ -5,6 +5,24 @@
     tictactoe.css
 > tictactoe 예제 js / css 파일
 
+### lifecycle 공부 예제
+    lifecycle.js
+> lifecycle 공부 예제 js 파일
+
+1/5 Study
+============
+## Event
+> camelCase 사용
+> JSX 사용
+> preventDefault
+
+### Binding
+> class method는 기본적으로 바인딩 되어있지 않음
+> bind() 이용
+
+#### 더 공부할 것
+> 여러가지 binding 처리 방식
+
 1/4 Study
 ============
 
