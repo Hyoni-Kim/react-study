@@ -9,6 +9,12 @@
     lifecycle.js
 > lifecycle 공부 예제 js 파일
 
+1/6 Study
+============
+## 조건부 렌더링
+> 상태에 따라 특정 컴포넌트만 렌더링 가능
+
+
 1/5 Study
 ============
 ## Event
