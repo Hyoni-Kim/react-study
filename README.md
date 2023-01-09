@@ -9,6 +9,17 @@
     lifecycle.js
 > lifecycle 공부 예제 js 파일
 
+### conditioanl rendering 공부 예제
+    rendering.js
+> conditional rendering 공부 예제 js 파일
+
+1/7 Study
+============
+## 조건부 렌더링 2
+> 엘리먼트를 저장하기 위해 변수 사용
+> 컴포넌트의 일부를 조건부로 렌더링 가능
+
+
 1/6 Study
 ============
 ## 조건부 렌더링
