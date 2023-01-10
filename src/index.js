@@ -1,55 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-function LoginButton(props){
+function Mailbox(props){
+    const unreadMessages = props.unreadMessages;
     return(
-        <button onClick={props.onClick}>
-            Login
-        </button>
+        <div>
+            <h1>Hello!</h1>
+            {unreadMessages.length > 0 &&
+            <h2>
+                You have {unreadMessages.length} unread messages.
+            </h2>
+            }
+        </div>
     );
 }
 
-function Logout(props){
-    return(
-        <button onClick={props.onClick}>
-            Logout
-        </button>
-    );
-}
-
-class LoginControl extends React.Component{
-
-    constructor(props){
-        super(props);
-
-        this.handleLoginClick = this.handleLoginClick.bind(this);
-        this.handleLogoutClick = this.handleLogoutClick.bind(this);
-        this.setState({isLoggedIn:false});
-    }
-
-    handleLoginClick(){
-        this.setState({isLoggedIn:true});
-    }
-
-    handleLogoutClick(){
-        this.setState({isLoggedIn:false});
-    }
-
-    render(){
-        const isLoggedIn = this.state.isLoggedIn;
-        let button;
-
-        if(isLoggedIn){
-            button = <LogoutButton onClick={this.handleLogoutClick} />;
-        }
-        else{
-            button = <LoginButton onClick={this.handleLoginClick} />;
-        }
-    }
-
-
-}
+const messages = ['React', 'Re: React', 'Re:Re: React'];
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-
-root.render(<Greeting isLoggedIn={false} />);
+root.render(<Mailbox unreadMessages={messages} />);
