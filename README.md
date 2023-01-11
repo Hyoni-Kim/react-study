@@ -13,6 +13,18 @@
     rendering.js
 > conditional rendering 공부 예제 js 파일
 
+1/11 Study
+============
+## 조건부 렌더링 3
+
+### 컴포넌트가 렌더링하는 것을 막기
+>렌더링을 출력하는 대신 null을 반환하면 됨
+
+    if(!props.warn){
+        return null;
+    }
+> render()에서 null을 반환하는 것은 lifecycle method 호출에 영향을 주지 않음
+
 1/7 Study
 ============
 ## 조건부 렌더링 2
