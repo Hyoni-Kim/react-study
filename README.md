@@ -11,7 +11,22 @@
 
 ### conditioanl rendering 공부 예제
     rendering.js
+    rendering_2.js
+    rendering_3.js
 > conditional rendering 공부 예제 js 파일
+
+1/12 Study
+============
+## 리스트, key
+> map()
+
+### key
+> key는 어떤 항목을 변경할지 식별
+> 안정적인 고유성을 위해 배열 내부 엘리먼트에 지정
+> 대부분 데이터 id를 사용
+> 안정적 id 없다면 최후로 index 사용 가능하지만 비추
+> 형제 사이에서만 고유하면 됨. 전체 범위에서 고유할 필요는 없음
+
 
 1/11 Study
 ============
